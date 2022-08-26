@@ -10,7 +10,7 @@ import (
 )
 
 func VirtualMemory() (*VirtualMemoryStat, error) {
-	return VirtualMemoryWithContext(context.Background())
+	return &VirtualMemoryStat{}, nil
 }
 
 func VirtualMemoryWithContext(ctx context.Context) (*VirtualMemoryStat, error) {
